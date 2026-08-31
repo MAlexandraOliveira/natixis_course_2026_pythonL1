@@ -5,6 +5,10 @@ spans four classes of three hours each, covering the language basics, Python's c
 structures, data analysis with pandas, and a mini-project that puts all three together. Every
 class is taught from a Google Colab notebook, so there is nothing to install.
 
+> 📅 **Materials are published as the course progresses.** Each class appears here on the day
+> it is taught, and its solutions afterwards. If a folder below is not in the repository yet,
+> that class is still to come.
+
 ## Key Course Components
 
 **Class 1 — Python Basics** introduces how a program runs and how to write one: `print()` and
@@ -45,16 +49,17 @@ to work outside Colab. It is optional and never required by any exercise.
 ## What is in this repository
 
 ```
-class-1/   Python basics
+class-1/   Python basics                    ← available now
 class-2/   Data structures
 class-3/   Data analysis with pandas
 class-4/   Mini-project
 datasets/  expenses.csv, used from Class 3 onwards
 ```
 
-Each of the first three classes has three notebooks — the **exposition** taught at the front
-of the room, an **exercises** notebook worked through in the second half, and a **SOLUTIONS**
-notebook shared afterwards. Class 4 has a project brief and its solution.
+Each of the first three classes has an **exposition** notebook, taught at the front of the
+room, and an **exercises** notebook worked through in the second half. A **SOLUTIONS** notebook
+is added after the class has run. Class 4 is a project brief, with its solution released
+afterwards.
 
 Exercises are graded in four sections, from a warm-up to a challenge, and every one states the
 output it expects so students can check themselves as they go. Nothing in an exercise uses a
