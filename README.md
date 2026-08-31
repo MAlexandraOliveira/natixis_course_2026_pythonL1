@@ -1,71 +1,188 @@
-# Natixis Python Level 1 — Course Summary
+# 🐍 Natixis Python Level 1
 
-This introductory Python course assumes no previous programming experience. The curriculum
-spans four classes of three hours each, covering the language basics, Python's core data
-structures, data analysis with pandas, and a mini-project that puts all three together. Every
-class is taught from a Google Colab notebook, so there is nothing to install.
+## 📚 Course Overview
 
-> 📅 **Materials are published as the course progresses.** Each class appears here on the day
-> it is taught, and its solutions afterwards. If a folder below is not in the repository yet,
-> that class is still to come.
+This introductory course is designed for students with no previous programming experience. Students will learn to read and write Python from the very beginning, work with Python's core data structures, and carry out a first real data analysis with Pandas. Every class is taught from a Google Colab notebook, so there is nothing to install.
 
-## Key Course Components
+> 📅 **Materials are published as the course progresses.** Each class appears here on the day it is taught, and its solutions afterwards.
 
-**Class 1 — Python Basics** introduces how a program runs and how to write one: `print()` and
-comments, variables and the core data types, casting and `input()`, the arithmetic, comparison
-and logical operators, and f-strings for putting values inside text. It closes with decisions
-(`if` / `elif` / `else`) and repetition (`while`, `for`, `break`, `continue`), pulled together
-into a single invoice-review example.
+# 📋 Course Structure (Introductory Python - Level 1)
 
-**Class 2 — Data Structures** covers the four containers Python gives you — lists, tuples,
-sets and dictionaries — how each is created, changed and searched, and, most importantly, how
-to choose between them. It also introduces the built-in helpers used constantly thereafter:
-`enumerate`, `sorted`, `sum`, `min` and `max`.
+## 🚀 Class 1: Python Basics
+### 🐍 Getting Started
+- Why Python, and where we will write it
+- Google Colab: cells, running code, saving your work
+- `print()`, comments, and the order a program runs in
 
-**Class 3 — Data Analysis with pandas** moves from single values to whole tables. It explains
-what a DataFrame is, how to load a CSV and take a first look at it, how to select columns and
-filter rows, and how to deal with real data quality problems — missing values, duplicates and
-inconsistent text. It finishes with creating new columns and summarising with `groupby`.
+### 📦 Variables & Data Types
+- Variables and naming rules
+- `str`, `int`, `float`, `bool`, `list`
+- Checking a type with `type()`
+- Casting between types, and reading input with `input()`
 
-**Class 4 — Mini-Project** asks students to build a monthly budget review: read the raw
-expenses file, clean it, work out who is over and under budget, print a readable report with a
-status per department, and export a summary the finance team could open in Excel. It needs
-everything from the three classes before it, not just pandas.
+### ➗ Operators
+- Arithmetic and assignment operators
+- Comparison and logical operators
+- Membership with `in` and `not in`
 
-## Prerequisites
+### ✨ f-strings
+- Putting values inside text
+- Formatting numbers, for example `{total:,.2f}`
 
-None. This is the entry point of the three-level programme, and it assumes no previous
-programming experience. Level 1 is a prerequisite for Level 2.
+### 🔀 Control Flow
+- Making decisions with `if` / `elif` / `else`
+- Indentation and why it matters
+- Repeating work with `while` and `for`
+- `range()`, and stopping or skipping with `break` and `continue`
 
-## Required Setup
+### 📝 Exercises
+- [Class 1 Exercises](class-1/L1C1%20exercises.ipynb)
+- Class 1 Solutions — *published after the class*
 
-A Google account and a web browser. Classes are taught in **Google Colab**, which runs Python
-in the browser with pandas already installed — there is nothing to install and nothing to
-configure. Students open a notebook from a link and start typing.
+---
 
-`class-1/vscode_setup.pptx` covers installing Python and VS Code locally, for anyone who wants
-to work outside Colab. It is optional and never required by any exercise.
+## 📊 Class 2: Data Structures
+### 📋 Lists
+- Creating, indexing and slicing
+- `.append`, `.remove`, `.pop`, `.insert`, `.sort`
+- Changing an item, and checking membership
 
-## What is in this repository
+### 📌 Tuples
+- Creating and unpacking
+- Why a tuple cannot be changed, and when you want that
 
-```
-class-1/   Python basics                    ← available now
-class-2/   Data structures
-class-3/   Data analysis with pandas
-class-4/   Mini-project
-datasets/  expenses.csv, used from Class 3 onwards
-```
+### 🎯 Sets
+- `.add` and `.discard`
+- Fast membership tests, and removing duplicates
+- Union, intersection and difference
 
-Each of the first three classes has an **exposition** notebook, taught at the front of the
-room, and an **exercises** notebook worked through in the second half. A **SOLUTIONS** notebook
-is added after the class has run. Class 4 is a project brief, with its solution released
-afterwards.
+### 📖 Dictionaries
+- Keys and values, and access with `.get`
+- Adding, updating and deleting entries
+- `.keys`, `.values`, `.items`, and looping over a dictionary
+- Nesting one level deep
 
-Exercises are graded in four sections, from a warm-up to a challenge, and every one states the
-output it expects so students can check themselves as they go. Nothing in an exercise uses a
-function or method that has not already been shown in a class.
+### 🔧 Built-in Functions
+- What "built-in" means, and how it differs from a method
+- `enumerate`, `sorted`, `sum`, `min`, `max`
+- `sorted()` against `.sort()`, and why one returns `None`
 
-## How a class runs
+### 🤔 Choosing the Right Structure
+- Which container to reach for, and the question that decides it
 
-Roughly 40 minutes of exposition, a 15-minute break, then 90 minutes of exercises — leaving
-time in a three-hour session for questions and for walking the room.
+### 📝 Exercises
+- Class 2 Exercises — *published on the day of the class*
+- Class 2 Solutions — *published after the class*
+
+---
+
+## 📈 Class 3: Data Analysis with Pandas
+### 🐼 DataFrames
+- What a DataFrame is, and how it differs from a list
+- `import pandas as pd`
+- Reading a CSV, and mounting Google Drive
+
+### 🔍 Exploring & Filtering
+- `.head()`, `.info()`, `.describe()`, `.shape`, `.columns`
+- Selecting one column and several columns
+- Filtering rows, and combining conditions with `&` and `|`
+
+### 🧹 Data Quality
+- Finding missing values with `.isnull().sum()`
+- `.dropna()`, `.fillna()`, `.drop_duplicates()`, `.drop()`
+- Tidying messy text with `.str.lower()` and `.replace()`
+
+### ➕ Creating & Changing Columns
+- Adding a calculated column
+- Building a column from a condition
+
+### 📊 Summarising
+- `.sum()`, `.mean()`, `.min()`, `.max()`, `.round()`
+- `.unique()`, `.nunique()`, `.value_counts()`
+- Grouping with `.groupby()`, and sorting the result
+- Exporting with `.to_csv()`
+
+### 📝 Exercises
+- Class 3 Exercises — *published on the day of the class*
+- Class 3 Solutions — *published after the class*
+
+---
+
+## 🚀 Class 4: Mini-Project
+### 💡 Project — Monthly Budget Review
+- Read the raw expenses file and clean it
+- Work out who is over and under budget, and by how much
+- Print a readable report with a status per department
+- Export a summary the finance team could open in Excel
+- Apply everything from Classes 1 to 3, not only Pandas
+
+---
+
+## 🎯 Learning Objectives
+
+By the end of this course, students will be able to:
+- Read and write Python, and understand the order in which a program runs.
+- Use variables, the core data types, casting and f-strings to produce readable output.
+- Control a program with `if` / `elif` / `else`, `while` and `for` loops.
+- Choose between lists, tuples, sets and dictionaries, and explain why.
+- Use Python's built-in functions such as `enumerate`, `sorted`, `sum`, `min` and `max`.
+- Load a CSV into a Pandas DataFrame and inspect it.
+- Clean real data: missing values, duplicates and inconsistent text.
+- Filter rows, create calculated columns, and summarise with `groupby`.
+- Build a small end-to-end report and export it for someone else to use.
+
+## ✅ Prerequisites
+
+None. This is the entry point of the programme and assumes no previous programming experience.
+
+Students only need:
+- A Google account
+- A web browser
+- No prior Python, and no software installed
+
+Level 1 is a prerequisite for Level 2.
+
+## 📁 Course Materials
+
+### 📚 Class Notebooks
+- [Class 1 — Python Basics](class-1/L1C1_python_basics.ipynb)
+- Class 2 — Data Structures *(published on the day of the class)*
+- Class 3 — Data Analysis with Pandas *(published on the day of the class)*
+- Class 4 — Mini-Project *(published on the day of the class)*
+
+### 📝 Exercises & Solutions
+- **Class 1**: [Exercises](class-1/L1C1%20exercises.ipynb) | Solutions *(after the class)*
+- **Class 2**: *published on the day of the class*
+- **Class 3**: *published on the day of the class*
+- **Class 4**: *published on the day of the class*
+
+### 📊 Datasets
+- [expenses.csv](datasets/expenses.csv) — used from Class 3 onwards
+
+## 🚀 Getting Started
+
+1. **📥 Setup Environment**
+   - Sign in to a Google account
+   - Open [Google Colab](https://colab.research.google.com) in your browser
+   - Nothing to install: Python, Pandas and Matplotlib are already there
+
+2. **📚 Start Learning**
+   - Open the [Class 1 notebook](class-1/L1C1_python_basics.ipynb) for the theory, and run every cell yourself
+   - Practise with the [Class 1 Exercises](class-1/L1C1%20exercises.ipynb)
+   - Check your work against the solutions, shared after the class
+
+3. **🔄 Progress Through Classes**
+   - Follow the same pattern for Classes 2-4
+
+4. **💡 Apply Your Skills**
+   - The final class of this course is dedicated to a project that applies everything covered throughout this introductory course.
+
+---
+
+## ⚠️ Intellectual Property Notice
+
+**Important**: This course material is the intellectual property of the course instructors and should not be distributed, shared, or reproduced without their explicit written consent. All content, exercises, and materials are protected by copyright and are intended solely for enrolled students of this course.
+
+---
+
+*This course provides a first foundation in Python programming, with a focus on writing readable code and carrying out a practical data analysis from start to finish.*
